@@ -1,5 +1,10 @@
+import { Typography } from '@mui/material';
+import { TodosLayout } from '../layout';
+
 export const TodoPage = () => {
   return (
-    <div>TodoPage</div>
+    <TodosLayout>
+      <Typography>TodoPage</Typography>
+    </TodosLayout>
   )
 }
