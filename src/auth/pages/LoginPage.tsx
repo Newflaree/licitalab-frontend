@@ -42,12 +42,14 @@ export const LoginPage = () => {
             }}
           >
             <Grid item xs={ 12 }>
-              <Button
-                variant='contained'
-                fullWidth
-              >
-                Login
-              </Button>
+              <RouterLink to='/'>
+                <Button
+                  variant='contained'
+                  fullWidth
+                >
+                  Login
+                </Button>
+              </RouterLink>
             </Grid>
           </Grid>
 

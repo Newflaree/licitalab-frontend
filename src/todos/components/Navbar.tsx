@@ -7,6 +7,7 @@ import {
   Toolbar,
   Typography
 } from '@mui/material';
+import { Link as RouterLink } from 'react-router-dom';
 
 export const Navbar = () => {
   return (
@@ -37,9 +38,11 @@ export const Navbar = () => {
             Welcome, Name
           </Typography>
 
-          <IconButton color='error'>
-            <LogoutOutlined />
-          </IconButton>
+          <RouterLink to='/auth/login'>
+            <IconButton color='error'>
+              <LogoutOutlined />
+            </IconButton>
+          </RouterLink>
         </Grid>
       </Toolbar>
     </AppBar>
